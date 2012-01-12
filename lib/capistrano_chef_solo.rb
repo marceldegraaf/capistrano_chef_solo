@@ -153,7 +153,7 @@ Capistrano::Configuration.instance(:must_exist).load do
         when "ubuntu"
           stream_or_run "#{sudo} aptitude install -y git-core curl build-essential bison openssl \
                 libreadline6 libreadline6-dev zlib1g zlib1g-dev libssl-dev \
-                libyaml-dev libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev \
+                libyaml-dev libxml2-dev libxslt-dev autoconf ncurses-dev \
                 vim wget tree" # this line not really dependencies, but who can live without them?
         when "centos"
           stream_or_run "#{sudo} yum install -y git-core curl patch bison openssl \
